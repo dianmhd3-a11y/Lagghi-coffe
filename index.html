@@ -1,166 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laghi Coffee</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>Laghi Coffe</title>
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
 
-<!--fonts--> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<!--feather icons -->
- <script src="https://unpkg.com/feather-icons"></script>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Laghi<span>Coffee</span>.</a>
 
-<!--my style -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
 
-<body>
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
 
-<!-- NAVBAR start -->
-<nav class="navbar">
-    <a href="#" class="navbar-logo">Laghi<span>Coffe</span>.</a>
-   
-    <div class="navbar-nav">
-    <a href="#home">Home</a>
-    <a href="#about">Tentang Kami</a>
-    <a href="#menu">Menu</a>
-    <a href="#contact">Kontak</a>
-</div>
+      <!-- Search Form -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+    </nav>
 
-    <div class="navbar-extra">
-        <a href="#" id="search"><i  data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i  data-feather="shopping-cart"></i></a>
-         <a href="#" id="hamburger-menu"><i  data-feather="menu"></i></a>
-        
-
-    </div>
-</nav>
-<!-- Navbar end -->
-
-<!-- HERO section start -->
-<section class="hero" id ="home">
-    <main class="content">
-        <h1>Nikmati Kopi Terbaik</h1>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Nikmati Kopi <span>Terbaik</span></h1>
         <p>Temani senja dengan rasa kopi yang hangat</p>
         <a href="#" class="cta">Pesan Sekarang</a>
-    </main>
-</section>
-
-<!--about section start -->
-<section id="about" class="about">
-    <h2><span>tentang</span>kami</h2>
-    <img src="img/tentang-kami.jpg"
-    alt="tentang kami"
-</div>
-<div class="content">
-    <h3>kenapa memilih kopi kami?</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente veniam, et molestias cupiditate eaque totam!</p>
-    </p>
-</div>
-<div class="row">
-    <div class="about-img">
-</section>
-<!-- about section end -->
-
-<!-- menu-section start -->
- <section id="menu"class="menu">
-     <h2><span>menu</span>kami</h2> 
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni amet aut! Provident, numquam modi!</p>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus harum expedita debitis illo quia tempora tempore vel nihil, numquam in.</p>
- 
+      </main>
     </section>
-    <div class="row">
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <h2><span>tentang</span> kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/tentang-kami.jpg" alt="tentang kami" />
+        </div>
+
+        <div class="content">
+          <h3>Kenapa memilih kopi kami?</h3>
+          <p>
+            Kami menggunakan biji kopi berkualitas tinggi, dipetik dan diproses
+            dengan hati-hati untuk menghasilkan rasa unik dan lezat. Kami
+            percaya kopi adalah tentang kualitas, bukan harga.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="menu">
+      <h2><span>menu</span> kami</h2>
+      <p>
+        Menu minuman kopi kami disajikan dari biji kopi pilihan dengan teknik
+        seduh terbaik.
+      </p>
+
+      <div class="row">
         <div class="menu-card">
-            <img src="img/cappuccino.jpg">
-            <h3>Cappuccino</h3>
-            <p>Rp 25.000</p>
+          <img src="img/cappuccino.jpg" alt="Cappuccino" />
+          <h3>Cappuccino</h3>
+          <p>Rp 25.000</p>
         </div>
 
-        <div class="card">
-            <img src="img/espresso.jpg">
-            <h3>Espresso</h3>
-            <p>Rp 20.000</p>
+        <div class="menu-card">
+          <img src="img/espresso.jpg" alt="Espresso" />
+          <h3>Espresso</h3>
+          <p>Rp 20.000</p>
         </div>
 
-        <div class="card">
-            <img src="img/latte.jpg">
-            <h3>Latte</h3>
-            <p>Rp 28.000</p>
+        <div class="menu-card">
+          <img src="img/latte.jpg" alt="Latte" />
+          <h3>Latte</h3>
+          <p>Rp 28.000</p>
         </div>
-    </div>
-</section>
- <!-- menu-section end -->
+      </div>
+    </section>
 
- <!-- contact section start -->
-  <section id="contact" class="contact">
-    <h2><span>kontak</span>kami</h2>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, asperiores.</p>
-   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae corporis sint aliquid doloremque ipsum quas.</p>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <h2><span>kontak</span> kami</h2>
+      <p>
+        Untuk informasi lebih lanjut, silakan hubungi kami melalui form di
+        bawah.
+      </p>
 
-   <div class="row">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.886919624397!2d98.6765863!3d3.613332999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131f1744242f3%3A0x1112e01982a1122f!2sJl.%20Kapten%20Muchtar%20Basri%2C%20Glugur%20Darat%20II%2C%20Kec.%20Medan%20Tim.%2C%20Kota%20Medan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1767902072884!5m2!1sid!2sid"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">class="map"></iframe>
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.8869196403675!2d98.67401137353735!3d3.613332996360766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131f1744242f3%3A0x1112e01982a1122f!2sJl.%20Kapten%20Muchtar%20Basri%2C%20Glugur%20Darat%20II%2C%20Kec.%20Medan%20Tim.%2C%20Kota%20Medan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1767960126320!5m2!1sid!2sid"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
 
-    <form action="">
-        <div class="input-group">
+        <form class="form">
+          <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text"
-             placeholder="nama">
-        </div>
-         <div class="input-group">
-            <i data-feather="mail"></i>
-            <input type="text"
-             placeholder="email">
-        </div>
-        <div class="input-group">
-            <i data-feather="phone"></i>
-            <input type="text"
-             placeholder="no hp">
-        </div>
-        <button type="submit" class="btn" pesan</button>
-    </form>
-   </div>
-</section>
-  <!-- contact section end -->
+            <input type="text" placeholder="Nama" />
+          </div>
 
-  <!--footer start -->
-  <footer>
-    <div class="socials">
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="email" placeholder="Email" />
+          </div>
+
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="No HP" />
+          </div>
+
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="socials">
         <a href="#"><i data-feather="instagram"></i></a>
         <a href="#"><i data-feather="twitter"></i></a>
         <a href="#"><i data-feather="facebook"></i></a>
-    </div>
+      </div>
 
-    <div class="links">
-        <a href="#home">home</a>
-        <a href="#about">Tentang kami</a>
-        <a href="#menu">menu</a>
-        <a href="#contact">kontak</a>
-    </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
 
-    <div class="credit">
-        <p>created by <a href="">Muhammad Dian</a>. l &COPY; 2026.></p>
-    </div>
-  </footer>
-   <!--footer end -->
-<!-- feather icons -->
+      <div class="credit">
+        <p>Created by <a href="#">Muhammad Dian</a> | &copy; 2026</p>
+      </div>
+    </footer>
 
-  <script>
+    <!-- Feather Icons -->
+    <script>
       feather.replace();
     </script>
 
-    <!-- my javascript -->
-     <script src="js/script.js"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
+    <script src="js/script.js"></script>
+  </body>
+</html>
