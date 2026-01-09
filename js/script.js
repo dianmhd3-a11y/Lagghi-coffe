@@ -1,24 +1,34 @@
-// toggle class active untuk hamburger menu
+// ===================== NAVBAR =====================
 const navbarNav = document.querySelector(".navbar-nav");
-// ketika hamburger menu di klik
-document.querySelector("#hamburger-menu").onclick = () => {
-  navbarNav.classList.toggle("active");
-};
-
-// toggle class active untuk search form
-const searchform = document.querySelector(".search form");
-const searchbox = document.querySelector("#search-box");
-
-document.querySelector("#search-button").onclick = () => {
-  searchform.classList.toggle("active");
-  searchbox.focus();
-};
-
-// klik di luar sidebar untuk menghilangkan nav
 const hamburger = document.querySelector("#hamburger-menu");
 
+// ===================== SEARCH =====================
+const searchForm = document.querySelector(".search-form");
+const searchBox = document.querySelector("#search-box");
+const searchButton = document.querySelector("#search-button");
+
+// hamburger menu click
+hamburger.addEventListener("click", function (e) {
+  navbarNav.classList.toggle("active");
+  e.preventDefault();
+});
+
+// search button click
+searchButton.addEventListener("click", function (e) {
+  searchForm.classList.toggle("active");
+  searchBox.focus();
+  e.preventDefault();
+});
+
+// klik di luar elemen
 document.addEventListener("click", function (e) {
+  // tutup navbar
   if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
     navbarNav.classList.remove("active");
+  }
+
+  // tutup search
+  if (!searchButton.contains(e.target) && !searchForm.contains(e.target)) {
+    searchForm.classList.remove("active");
   }
 });
